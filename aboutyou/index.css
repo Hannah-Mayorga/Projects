@@ -1,0 +1,71 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: #739199;
+    color: black;
+}
+header {
+    background-image: url(tree-background.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.80;
+}
+h1 {
+    position: absolute;
+    left: 0;
+    top: 40%;
+    width: 97.7%;
+    text-align: center;
+    background-color: #111111;
+    color: rgb(255, 255, 255);
+    padding: 18px;
+    font-family: 'Pangolin', cursive;
+    font-size: 3em;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px #822c01;
+
+}
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    color: #822c01;
+}
+p {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 20px;
+}
+ol {
+    font-family: 'Averia Sans Libre', cursive;
+    font-size: 20px;
+    list-style-type: none;
+
+}
+a {
+    text-decoration: none;
+    color: #822c01;
+}
+aside {
+    background-image: url(SkellyR.png);
+    float: right;
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 99.4%;
+    text-align: center;
+}
+aside1 {
+    background-image: url(SkellyL.png);
+}
+footer {
+    position: fixed;
+    left:0px;
+    bottom:0px;
+    height:45px;
+    width:100%;
+    border: 3px black solid;
+    background-image: linear-gradient(to left, #0f2027, #203a43, #2c5364);
+}
+
