@@ -57,9 +57,6 @@ aside {
     width: 99.4%;
     text-align: center;
 }
-aside1 {
-    background-image: url(SkellyL.png);
-}
 img {
     border: 3px #822c01 solid;
 }
@@ -69,7 +66,8 @@ footer {
     bottom:0px;
     height:45px;
     width:100%;
-    border: 3px black solid;
+    color: white;
+    border: solid black 3px;
     background-image: linear-gradient(to left, #0f2027, #203a43, #2c5364);
 }
 
