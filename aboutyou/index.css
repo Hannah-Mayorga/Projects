@@ -36,6 +36,7 @@ h2 {
 p {
     font-family: 'Averia Sans Libre', cursive;
     font-size: 20px;
+    word-spacing: 2px;
 }
 ol {
     font-family: 'Averia Sans Libre', cursive;
@@ -58,6 +59,9 @@ aside {
 }
 aside1 {
     background-image: url(SkellyL.png);
+}
+img {
+    border: 3px #822c01 solid;
 }
 footer {
     position: fixed;
