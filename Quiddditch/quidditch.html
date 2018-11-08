@@ -60,24 +60,26 @@
     <!-- Create a carousel, but this time instead of images, three articles containing text or images are included as the carousel slides. 
         You may format the text anyway you wish, but must use some type of Bootstrap Typography for 2+ items.-->
 
-    <section id="intro-carousel" class='container'>
+    <!--Finished-->    
+    <section id="intro-carousel" class='container carousel slide' data-ride="carousel">
 
         <!-- The slideshow -->
-        <div>
-            <article>
+        <div class="carousel-inner">
+            <article class="carousel-item active text-center jumbotron" >
                 <h1>PLAY QUIDDITCH NOW</h1>
                 <h3>Click the button to learn how!</h3>
                 <a class='btn btn-info' role='button' href="https://www.usquidditch.org/teams">JOIN US</a>
             </article>
-            <article>
-                <img src="https://jlaw21.github.io/Resources/potter-quidditch.jpg" alt="Potter and the Snitch">
+            <article class="carousel-item" >
+                <img src="Harry_Potter_Quidditch_Firebolt.png" class="rounded mx-auto d-block" alt="Potter and the Snitch">
             </article>
-            <article>
+            <article class="carousel-item jumbotron text-center display-3" >
                 <p>
                     <q>I sat in a hotel room after a row with my then boyfriend and invented it. Looking back, I can understand
                         why I liked the idea of Bludgers</q> - JK ROWLINGS</p>
             </article>
         </div>
+
         <!-- DO NOT TOUCH THESE. In class we included indicators at the bottom of the pictures to control the slides, this adds arrows on the left and right to control the slides.-->
         <a class="carousel-control-prev" href="#intro-carousel" data-slide="prev">
             <span class="carousel-control-prev-icon"></span>
@@ -182,7 +184,7 @@
     </section>
 
     <!-- Customize the table to your preference.-->
-
+    <!--Finished-->
     <section id='worldcup' class='container'>
         <h1>Quidditch World Cup</h1>
         <p>The Quidditch World Cup is played every year, similar to the Muggles Olympics. However, what some may not know is
@@ -261,15 +263,15 @@
                 <a href="#Slytherin" class="dropdown-item" data-toggle="collapse">Slytherin</a>
             </div>
         </div>
-        <div id='desc-teams'>
+        <div id='desc-teams' class="row">
             <div id='Ireland' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-lg-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/6/68/Irelandcrest.JPG/revision/latest/scale-to-width-down/350?cb=20110529164318'>
+                <img class="float-left px-5 pt-4"  src='https://vignette.wikia.nocookie.net/harrypotter/images/6/68/Irelandcrest.JPG/revision/latest/scale-to-width-down/350?cb=20110529164318'>
                 <p>The Irish National Quidditch Team are a national Quidditch team representing Ireland. They won the 1994 Quidditch
                     World Cup, beating Bulgaria in the final. The mascots of the team are Leprechauns.</p>
                 <a href="http://harrypotter.wikia.com/wiki/Irish_National_Quidditch_team">LEARN MORE</a>
             </div>
             <div id='Bulgaria' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/2/2c/Bulgariacrest.JPG/revision/latest/scale-to-width-down/350?cb=20110529164032'>
+                <img class="float-left px-5 pt-4" src='https://vignette.wikia.nocookie.net/harrypotter/images/2/2c/Bulgariacrest.JPG/revision/latest/scale-to-width-down/350?cb=20110529164032'>
                 <p>The Bulgarian National Quidditch Team is the national Quidditch team of Bulgaria. In 1994, Bulgaria reached
                     the final of the Quidditch World Cup. Bulgarian supporters wave flags of white, green, and red, the same
                     colours as the Bulgarian flag in the Muggle world. They reached the final of the 2002 Quidditch World
@@ -278,20 +280,20 @@
                 <a href='http://harrypotter.wikia.com/wiki/Bulgarian_National_Quidditch_team'>LEARN MORE</a>
             </div>
             <div id='Brazil' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/7/74/720px-Flag_of_Brazil.png/revision/latest/scale-to-width-down/350?cb=20091128144932'>
+                <img class="float-left px-5 pt-4" src='https://vignette.wikia.nocookie.net/harrypotter/images/7/74/720px-Flag_of_Brazil.png/revision/latest/scale-to-width-down/350?cb=20091128144932'>
                 <p>The Brazilian National Quidditch team is the national Quidditch team of Brazil. Their mascots for the 2014
                     Quidditch World Cup final were Curupiras.</p>
                 <a href='http://harrypotter.wikia.com/wiki/Brazilian_National_Quidditch_team'>LEARN MORE</a>
             </div>
             <div id='USA' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/a/a3/American_National_Quidditch_team.jpg/revision/latest?cb=20090409033037'>
+                <img class="float-left px-5 pt-4" src='https://vignette.wikia.nocookie.net/harrypotter/images/a/a3/American_National_Quidditch_team.jpg/revision/latest?cb=20090409033037'>
                 <p>The U.S.A. has a basketball-style Team Special Move named The Harlem Shuffle (20 points). The name is taken
                     from the popular No-Maj basketball team The Harlem Globetrotters, who are best known for their skilful
                     and entertaining play involving a ball of similar size to the Quaffle, during games.</p>
                 <a href='http://harrypotter.wikia.com/wiki/American_National_Quidditch_team'>LEARN MORE</a>
             </div>
             <div id='Gryffindor' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/d/d3/Gryffindor%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20160731003525'>
+                <img class="float-left px-5 pt-2" src='https://vignette.wikia.nocookie.net/harrypotter/images/d/d3/Gryffindor%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20160731003525'>
                 <p>The Gryffindor Quidditch team is the Quidditch team of Hogwarts School of Witchcraft and Wizardry's Gryffindor
                     House. They play in robes of scarlet, their House colour. The mascot of Gryffindor House and its Quidditch
                     team is a lion.</p>
@@ -301,20 +303,20 @@
                 <a href='http://harrypotter.wikia.com/wiki/Gryffindor_Quidditch_team'>LEARN MORE</a>
             </div>
             <div id='Hufflepuff' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/b/b1/Hufflepuff%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181210'>
+                <img class="float-left px-5 pt-2" src='https://vignette.wikia.nocookie.net/harrypotter/images/b/b1/Hufflepuff%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181210'>
                 <p>The Hufflepuff Quidditch team is the Quidditch team of Hogwarts School of Witchcraft and Wizardry's Hufflepuff
                     House. They play in robes of canary yellow, their House colour. The mascot of Hufflepuff House and its
                     Quidditch team is a badger. One known captain of the team was Cedric Diggory.</p>
                 <a href='http://harrypotter.wikia.com/wiki/Hufflepuff_Quidditch_team'>LEARN MORE</a>
             </div>
             <div id='Ravenclaw' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/4/4b/Ravenclaw%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181211'>
+                <img class="float-left px-5 pt-2" src='https://vignette.wikia.nocookie.net/harrypotter/images/4/4b/Ravenclaw%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181211'>
                 <p>The Ravenclaw Quidditch team is one of the four house Quidditch teams at Hogwarts School of Witchcraft and
                     Wizardry. One known captain of the Quidditch team was Roger Davies.</p>
                 <a href='http://harrypotter.wikia.com/wiki/Ravenclaw_Quidditch_team'>LEARN MORE</a>
             </div>
             <div id='Slytherin' data-parent="#desc-teams" class="collapse col-lg-12">
-                <img class="float-left" src='https://vignette.wikia.nocookie.net/harrypotter/images/5/5d/Slytherin%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181212'>
+                <img class="float-left px-5 pt-2" src='https://vignette.wikia.nocookie.net/harrypotter/images/5/5d/Slytherin%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181212'>
                 <p>The Slytherin Quidditch team is the Quidditch team for the Hogwarts Slytherin house. Each year, they compete
                     for the Inter-House Quidditch Cup, an award presented to the Hogwarts House team that earns the most
                     points. Unlike the Gryffindor, Hufflepuff and Ravenclaw teams, the Slytherin team has no qualms with
@@ -334,21 +336,52 @@
         Don't be boring, but don't spend 3 days 'jazzing' it up, unless you have three days to spend. 
         Simple, eloquent yet impressive. -->
 
-    <section id='us-quidditch'>
-        <div class="card">
-            <img class="card-img-top" src="ball-state.jpg" alt="Card-image" style="width:100%">
-            <div class="card-body">
-                <h4 class="card-title">Indiana Ball State Quidditch</h4>
-                <p class="card-text">Text</p>
-                <a href="#">Learn More</a>
+    <!--Finished-->
+    <section id='us-quidditch' class="container">
+        <br>
+        <h1>College Teams</h1>
+        <br>
+        <div class="card-deck">
+            <div class="card" style="width:400px">
+                <h2>Ball State Quidditch</h2>
+                <p>Indianapolis, IN</p>
+                <img class="card-img-top" src="Ball-State (1).jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">BSQL</h4>
+                    <p class="card-text">Ball State's quidditch team is apart of the international quidditch association. It is no surprise that
+                        they are one of the highest ranking teams around the world. </p>
+                    <a href="#https://bsuquidditchteam.weebly.com/index.html" class="btn btn-dark">Learn More</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <h2>Anteater Quidditch</h2>
+                <p>Irvine, CA</p>
+                <img class="card-img-top" src="anteater.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">AQ</h4>
+                    <p class="card-text">Anteater Quidditch is UC Irvines collegiate quidditch team, going into it's fifth usq official season. </p>
+                    <a href="#https://www.usquidditch.org/team/anteaters/" class="btn btn-dark">Learn More</a>
+                </div>
+            </div>
+            <div class="card" style="width:400px">
+                <h2>Appalachian State Quidditch</h2>
+                <p>Boone, NC</p>
+                <img class="card-img-top" src="BlackYellowA.png" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">ASQ</h4>
+                    <p class="card-text">Appalachian Apparators Black Squad is now Appalachian State Quidditch!</p>
+                    <a href="#https://www.usquidditch.org/team/app-state/" class="btn btn-dark">Learn More</a>
+                </div>
             </div>
         </div>
 
     </section>
 
     <!-- However you want to customize this, I would definately make it smaller-->
-    <footer class='container text-center footer' style='margin-top:500px; height:200px'>
-        <h4>website created by Joshua Law</h4>
+
+    <!--Finished-->
+    <footer class='container text-center footer jumbotron jumbotron-fluid' style='margin-top:100px; height:200px'>
+        <h4>Website created by Joshua Law</h4>
         <p>This website is intended for educational purposes and all materials used are for this purpose.</p>
     </footer>
 
