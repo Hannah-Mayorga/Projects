@@ -25,12 +25,42 @@
 </head>
 
 <body>
+    
+    <script>
+        $(document).ready(function(){
+                   $("#myModal").modal();
+            
+        });
+    </script>
+    <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">WARNING</h4>
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  this site ugly
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
     <!-- Create a navbar with the links displaying via the dropdown icon for small displays and horizontally for any other size display. 
         The navbar should also contain the snith picture as the brand logo which links to the top of the page (i.e. refreshes the page). 
         If you have questions, refer to the pictures navbar and navbar-small -->
 
     <!--Finished-->
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm sticky-top navie">
         <a class="navbar-brand" href='#'>
             <img src="https://jlaw21.github.io/Resources/snitch.png" alt="The Snitch" width=50px>
         </a>
@@ -129,21 +159,21 @@
                 <article id='q-roles' class='container fade tab-pane'>
                     <ul class="list-group list-group-flush">
                         <li class='list-group-item'>
-                            <button type="button" class='btn btn-dark' data-toggle="collapse" href="#desc-chasers">Chasers</button>
+                            <button type="button" class='btn btn-primary' data-toggle="collapse" href="#desc-chasers">Chasers</button>
                         </li>
                         <p id='desc-chasers' class="collapse">The Chasers pass the Quaffle trying to throw it through one of the three hoops.</p>
                         <li class='list-group-item'>
-                            <button type="button" class='btn btn-dark' data-toggle="collapse" href="#desc-keeper">Keeper</button>
+                            <button type="button" class='btn btn-primary' data-toggle="collapse" href="#desc-keeper">Keeper</button>
                         </li>
                         <p id='desc-keeper' class="collapse ">The Keeper is responsible for keeping the Quaffle from going through the hoops, similar to a Goalie
                             in soccer.</p>
                         <li class='list-group-item'>
-                            <button type="button" class='btn btn-dark' data-toggle="collapse" href="#desc-beaters">Beaters</button>
+                            <button type="button" class='btn btn-primary' data-toggle="collapse" href="#desc-beaters">Beaters</button>
                         </li>
                         <p id='desc-beaters' class="collapse ">The Beaters are equipped with large clubs, used to smack the Bludgers around, attempting to disrupt
                             the Chasers from getting a goal.</p>
                         <li class='list-group-item'>
-                            <button type="button" class='btn btn-dark' data-toggle="collapse" href="#desc-seeker">Seeker</button>
+                            <button type="button" class='btn btn-primary' data-toggle="collapse" href="#desc-seeker">Seeker</button>
                         </li>
                         <p id='desc-seeker' class="collapse ">The Seeker tries to catch the Golden Snitch, and in doing so, ends the game.</p>
                     </ul>
@@ -152,15 +182,15 @@
                 <article id='q-balls' class='container fade tab-pane'>
                     <ul class="nav">
                         <li class='nav-item'>
-                            <button type="button" class='btn btn-dark ' data-toggle="collapse" href="#desc-quaffle">Quaffle</button>
+                            <button type="button" class='btn btn-primary ' data-toggle="collapse" href="#desc-quaffle">Quaffle</button>
                         </li>
 
                         <li class='nav-item'>
-                            <button type="button" class='btn btn-dark' data-toggle="collapse" href="#desc-bludger">Bludgers</button>
+                            <button type="button" class='btn btn-primary' data-toggle="collapse" href="#desc-bludger">Bludgers</button>
                         </li>
 
                         <li class='nav-item'>
-                            <button type="button" class='btn btn-dark' data-toggle="collapse" href="#desc-snitch">Golden Snitch</button>
+                            <button type="button" class='btn btn-primary' data-toggle="collapse" href="#desc-snitch">Golden Snitch</button>
                         </li>
                         <p id='desc-quaffle' class="collapse show">A round red seamless leather ball, 12 inches in diameter – that is, about the size of a Muggle football.
                             The Quaffle is the ball with which Chasers score goals, and due to the nature of the game must
@@ -193,7 +223,7 @@
         <p>Any country capable of producing a Quidditch team is allowed to play in the World Cup. The first round, or 'group
             round', is when all the participating teams are separated into 16 groups, and over the course of two years, play
             each other. The accumulated points are tallied and the winners from each group progress on to the World Cup.</p>
-        <table class="table table-dark table-hover table-striped">
+        <table class="table table-primary table-hover table-striped">
             <tr>
                 <th>Year</th>
                 <th>Teams</th>
@@ -247,7 +277,7 @@
         <h1>Known Teams</h1>
         <h3>Click on a team to see details.</h3>
         <div class="dropdown">
-            <button type="button" class="btn btn-dark dropdown-toggle" data-toggle="dropdown">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                 The Teams
             </button>
             <div class="dropdown-menu">
@@ -350,7 +380,7 @@
                     <h4 class="card-title">BSQL</h4>
                     <p class="card-text">Ball State's quidditch team is apart of the international quidditch association. It is no surprise that
                         they are one of the highest ranking teams around the world. </p>
-                    <a href="#https://bsuquidditchteam.weebly.com/index.html" class="btn btn-dark">Learn More</a>
+                    <a href="#https://bsuquidditchteam.weebly.com/index.html" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
             <div class="card" style="width:400px">
@@ -360,7 +390,7 @@
                 <div class="card-body">
                     <h4 class="card-title">AQ</h4>
                     <p class="card-text">Anteater Quidditch is UC Irvines collegiate quidditch team, going into it's fifth usq official season. </p>
-                    <a href="#https://www.usquidditch.org/team/anteaters/" class="btn btn-dark">Learn More</a>
+                    <a href="#https://www.usquidditch.org/team/anteaters/" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
             <div class="card" style="width:400px">
@@ -370,7 +400,7 @@
                 <div class="card-body">
                     <h4 class="card-title">ASQ</h4>
                     <p class="card-text">Appalachian Apparators Black Squad is now Appalachian State Quidditch!</p>
-                    <a href="#https://www.usquidditch.org/team/app-state/" class="btn btn-dark">Learn More</a>
+                    <a href="#https://www.usquidditch.org/team/app-state/" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>

@@ -4,3 +4,20 @@
 .carousel {
     height: 600px;
 }
+.navie{
+    background-color: blue;
+}
+.jumbotron{
+    background-color: yellow;
+}
+body{
+    background: linear-gradient(to bottom, red, blue, yellow, green);
+    background-size: 400% 400%;   
+    animation: grad 1s linear infinite;
+    color: red;
+}
+@keyframes grad {
+    25%{background-position: 0 100%}
+    50%{background-position: 100% 100%}
+    75%{background-position: 100% 0}
+}
