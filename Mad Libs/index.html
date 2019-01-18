@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="index.js"></script>
     <title>Mad Libs</title>
 </head>
 <body>
     <form>
-        <fieldset>
-            <h1>Fill in the blanks!</h1>
-            <label>If you like to talk to <input type="text" placeholder="Noun (Plural)"/> </label> <br>
-            <label>If a <input type="text"/> can make you <input type="text"/></label> <br>
-            <label>If you like to waltz with <input type="text"/></label> <br>
-            <label>Up and down the produce <input type="text"/> ... </label> <br>
-            <label>Have we got a/an <input type="text"/> for you!</label> <br>
-            <label><input type="text"/>Tales, <input type="text"/>Tales, <input type="text"/>Tales, <input type="text"/>Tales, </label> <br>
-            <label><input type="text`"/>Tales, <input type="text"/>Tales, <input type="text"/>Tales, <input type="text"/>Tales! </label> <br>
-            <label>Broccoli! <input type="text"/>! Gotta be </label> <br>
-            <label><input type="text"/>Tales!</label> <br>
-            <label><input type="text"/> beans! Collard <input type="text"/>! <input type="text"/> <input type="text"/>!</label> <br>
-            <label><input type="text"/>Tales!</label> <br>
-            <label>Cauliflower! <input type="text"/> and sour! Half a/an <input type="text"/>!</label> <br>
-            <label><input type="text"/>Tales!</label> <br>
-            <label>There's never-ever-ever-ever-ever been a/an <input type="text"/> like <input type="text"/>Tales!</label> <br>
-            <label>There's never-ever-ever-ever-ever been a/an <input type="text"/> like <input type="text"/>Tales!</label> <br>
-            <label>It's <input type="text"/> for <input type="text"/>Tales!</label>
-            <button type="button"> Go Mad!!! </button>
+        <fieldset>    
+            <legend>Fill in the blanks!</legend>
+            <label>If you like to talk to <input type="text" placeholder="Noun (Plural)" id="word1"/> </label> <br>
+            <label>If a <input type="text" placeholder="Noun" id="word2"/> can make you <input type="text" placeholder="Verb" id="word3"/></label> <br>
+            <label>If you like to waltz with <input type="text" placeholder="Noun (Plural)" id="word4"/></label> <br>
+            <label>Up and down the produce <input type="text" placeholder="Noun" id="word5"/> ... </label> <br>
+            <label>Have we got a/an <input type="text"placeholder="Noun" id="word6"/> for you!</label> <br>
+            <label><input type="text"placeholder="Type of Food" id="word7"/>Tales, ______Tales, ______Tales, ______Tales, </label> <br>
+            <label>______Tales, ______Tales, ______Tales, ______Tales! </label> <br>
+            <label>Broccoli! <input type="text" placeholder="Noun (Plural)" id="word8"/>! Gotta be </label> <br>
+            <label>______Tales!</label> <br>
+            <label><input type="text" placeholder="Adjective" id="word9"/> beans! Collard <input type="text" placeholder="Noun (Plural)" id="word10"/>! <input type="text" placeholder="Adjective" id="word11"/> <input type="text" placeholder="Noun" id="word12"/>!</label> <br>
+            <label>______Tales!</label> <br>
+            <label>Cauliflower! <input type="text" placeholder="Adjective" id="word13"/> and sour! Half a/an <input type="text" placeholder="Type of Measurement" id="word14"/>!</label> <br>
+            <label>______Tales!</label> <br>
+            <label>There's never-ever-ever-ever-ever been a/an ______ like ______Tales!</label> <br>
+            <label>There's never-ever-ever-ever-ever been a/an ______ like ______Tales!</label> <br>
+            <label>It's <input type="text" placeholder="Noun" id="word15"/> for ______Tales!</label> <br> <br>
+            <legend>
+                <button type="button" onclick= "showInfo()"> Go Mad!!! </button>
+            </legend>
+            <br>
         </fieldset>
     </form>
+    <br>
+    <div id="output"></div>
+    <br>
     <footer>
        <p> DISCLAIMER: This website was created for learning JavaScript. All credit for the mad lib goes to the website madtakes.com </p>
     </footer>
